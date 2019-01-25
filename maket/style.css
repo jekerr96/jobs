@@ -1,0 +1,14 @@
+.append_div{
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  border: 1px solid black;
+}
+.del{
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+}

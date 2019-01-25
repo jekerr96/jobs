@@ -1,0 +1,12 @@
+RewriteEngine on
+Options +FollowSymlinks
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^job/([0-9]+)$ job.php?id=$1 [QSA,L]
+RewriteRule ^profile/([0-9]+)$ lk.php?id=$1 [QSA,L]
+RewriteRule ^profile$ lk.php [QSA,L]
+RewriteRule ^chat/([0-9]+)$ chat.php?job=$1 [QSA,L]
+RewriteRule ^restore/([a-zA-Z0-9]+)/?$ restore.php?code=$1 [QSA,L]
+RewriteRule ^verify/([a-zA-Z0-9]+)/?$ verify.php?code=$1 [QSA,L]
+RewriteRule ^new_category$ add_category.php [QSA,L]
